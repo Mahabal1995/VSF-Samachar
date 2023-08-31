@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9edde;
+}
+
+.vyasa {
+  margin: 20px 10px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.vyasa .img-container img {
+  width: 7rem;
+  vertical-align: top;
+}
+
+.text-container {
+  margin: 0 1em;
+}
+
+.text-container p {
+  color: #333333;
+  font-size: 14px;
+  margin: 1em auto;
+  font-family: lato, "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 150%;
+}
+
+.hr1 {
+  margin: 1rem 3rem;
+  background-color: #754b33;
+  height: min-content;
+}
+
+.samachar {
+  margin-top: 2rem;
+}
+
+.accordion {
+  background-color: #f9edde;
+  margin: 1% auto;
+  font-family: lato, "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 90%;
+}
+
+.accordion-item {
+  /* margin-bottom: 2px; */
+  cursor: pointer;
+}
+
+.accordion-title {
+  padding: 3px;
+  display: flex;
+  justify-content: space-around;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.accordion-hr {
+  height: 2.5px;
+}
+
+.question {
+  width: 80%;
+  text-align: left;
+  width: 100%;
+  color: black;
+  margin-top: 5px;
+  font-family: lato, "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  border-radius: 4px;
+  width: 100%;
+  margin: 2px 0 8px 0;
+}
+
+/* .accordion-content p {
+  font-family: Hindguntur Light, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #51301d;
+  padding-left: 20px;
+  margin-top: 5px;
+} */
+
+.accordion-content img {
+  width: 100%;
+}
+
+.accordion-title i {
+  color: #990000;
+}
+
+.arrow-two {
+  float: right;
+  transition: transform 0.5s ease;
+}
+
+.active .arrow-two {
+  transform: rotate(180deg);
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.color-990000 {
+  color: #990000;
+}
+
+.color-333333 {
+  color: #333333;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+.text-center {
+  text-align: center;
+}
