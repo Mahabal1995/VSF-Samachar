@@ -1,25 +1,25 @@
 // JavaScript to toggle accordion content
 
-//  Getting all the accordion items
-const accordionItems = document.getElementsByClassName("accordion-item");
+const accordionItems = document.querySelectorAll(".accordion-item");
 
 for (let i = 0; i < accordionItems.length; i++) {
-  accordionItems[i].addEventListener("click", function () {
-    let accordionContent = this.getElementsByClassName("accordion-content")[0];
+  const accordionTitle = accordionItems[i].querySelector(".accordion-title");
+  const accordionContent =
+    accordionItems[i].querySelector(".accordion-content");
 
-    let activeAccordionItem = document.querySelector(".accordion-item.active");
+  accordionTitle.addEventListener("click", function () {
+    const activeAccordionItem = document.querySelector(
+      ".accordion-item.active"
+    );
 
-    // Close previously active accordion item
-    if (activeAccordionItem && activeAccordionItem !== this) {
+    if (activeAccordionItem && activeAccordionItem !== accordionItems[i]) {
       activeAccordionItem.classList.remove("active");
-      activeAccordionItem.getElementsByClassName(
-        "accordion-content"
-      )[0].style.display = "none";
+      activeAccordionItem.querySelector(".accordion-content").style.display =
+        "none";
     }
 
-    this.classList.toggle("active");
+    accordionItems[i].classList.toggle("active");
 
-    // Toggling the accordion contents
     if (accordionContent.style.display === "block") {
       accordionContent.style.display = "none";
     } else {
