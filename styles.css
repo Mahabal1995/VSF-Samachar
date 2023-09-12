@@ -36,7 +36,7 @@ body {
 }
 
 .hr1 {
-  margin: 1rem 3rem;
+  margin: 1rem 1rem;
   background-color: #754b33;
   height: min-content;
 }
@@ -50,7 +50,7 @@ body {
   margin: 1% auto;
   font-family: lato, "helvetica neue", helvetica, arial, sans-serif;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 24px;
   width: 90%;
 }
@@ -97,7 +97,7 @@ body {
 }
 
 .accordion-content img {
-  width: 50%;
+  width: 100%;
   margin: 2px auto;
   font-size: 14px;
   font-family: lato, "helvetica neue", helvetica, arial, sans-serif;
@@ -146,4 +146,24 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+/* Styles for devices with a width between 481px and 767px (landscape view) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Your styles for mobile landscape view go here */
+
+  .text-container p {
+    margin: 2.5em auto;
+  }
+
+  .container {
+    padding: 0 5rem;
+  }
+
+  .accordion-content img {
+    width: 50%;
+    margin: 2px auto;
+    font-size: 14px;
+    font-family: lato, "helvetica neue", helvetica, arial, sans-serif;
+  }
 }
