@@ -31,6 +31,7 @@ body {
   color: #333333;
   font-size: 14px;
   margin: 1em auto;
+  margin-bottom: 1em;
   font-family: lato, "helvetica neue", helvetica, arial, sans-serif;
   line-height: 150%;
 }
@@ -148,12 +149,17 @@ body {
   text-align: center;
 }
 
+.left-aligned {
+  text-align: left;
+}
+
 /* Styles for devices with a width between 481px and 767px (landscape view) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   /* Your styles for mobile landscape view go here */
 
   .text-container p {
     margin: 2.5em auto;
+    margin-bottom: 1em;
   }
 
   .container {
